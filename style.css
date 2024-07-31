@@ -1,0 +1,1258 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+body
+{
+    color: #ededed;
+}
+
+.header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: #081b29;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b87f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    position: relative;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: default;
+    opacity:0 ;
+    animation: slideRight 1s ease forwards;
+    color: #051129;
+    background-color: #0ef;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: -20px;
+}
+.image{
+    text-align: center;
+    
+}
+.image img{
+    border-radius: 50%;
+    width: 50%;
+    border: 5px solid red;
+    box-shadow: 0 0 5px rgb(0, 255, 55),
+    0 0 25px cyan, 0 0 50px rgb(255, 0, 43),
+    0 0 100px cyan, 0 0 200px rgb(0, 20, 241);
+    transition: .3s;
+    opacity: 0;
+    animation: slideLeft 3s ease-in-out forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+.navbar a{
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+
+}
+.navbar a:hover{
+    color: #0ef;  
+   text-decoration: underline;
+   text-shadow: 3px 3px 20px  #0ef,
+    2px 1px 30px #0ef;
+}
+.home{
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: #051129;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+.home-content{
+    max-width: 600px;
+}
+.home-content h3{
+    font-size: 30px;
+    font-weight: 700;
+    opacity: 0;
+   animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
+
+}
+.home-content h3:nth-of-type(2){
+    margin-bottom: 30px;
+   animation: slideTop 1s ease forwards;
+   animation-delay: .7s;
+}
+
+.home-content h3 span{
+    color: #0ef;
+}
+.home-content h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin: -3px 0;
+    opacity:0 ;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+.home-content p{
+    font-size: 17px;
+   opacity: 0;
+   animation: slideLeft 1s ease forwards;
+   animation-delay: 1s; 
+}
+.home-sci a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    transition: .5s;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+     animation-delay: calc(.2s*var(--i));
+    margin: 30px 15px 30px 0;
+}
+.home-sci a:hover{
+    background: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}
+.btn-box{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef ;
+
+}
+.btn-box:hover{
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 1.5rem;
+   background-color: #051129;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+.about-img img{
+    padding-bottom: 20%;
+    max-width: 63px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+
+}
+.about-text h2{
+    font-size: 50px;
+    text-decoration: underline;
+}
+.about-text h2 span{
+    color:#0ef;
+}
+.about-text h4{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+
+}
+.about-text p{
+    color: aliceblue;
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+#text{
+    color: red;
+}
+
+#services{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    /* margin-bottom: 4rem;
+    margin-top: -12px; */
+    background: #051129;
+}
+.sub-title{
+    text-align: center;
+    font-size: 60px;
+   text-decoration: underline;
+}
+.sub-title span{
+    color: #0ef;
+
+}
+.services-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    text-align: center;
+    overflow-x: auto;
+    background-color: transparent;
+}
+.services-list::-webkit-scrollbar {
+    height: 12px;
+}
+.services-list::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+.services-list::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+.services-list::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.services-list div{
+    width: 30%;
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b87f;
+    flex-shrink: 0;
+    margin: 30px;
+}
+.services-list div i{
+    font-size: 50px;
+   
+
+}
+.services-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+
+.container {
+    padding: 90px;
+    
+}
+.services-list div a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    /* display: inline-block; */
+    margin-bottom: 20px;
+
+}
+.read{
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+
+}
+.read:hover{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan, 0 0 200px cyan
+}
+.services-list div:hover{
+    transform: translateY(-10px);
+}
+
+#techstack{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 0rem; 
+    padding-bottom: 40px;
+    background: #051129;
+    
+}
+.techstack-heading{
+    text-align: center;
+    font-size: 60px;
+    text-decoration: underline;
+}
+.techstack-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    background-color: transparent;
+    margin: 0% 6% 0% 6%;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+    /* box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b87f; */
+    border-right: 10px;
+    border-radius: 20px;
+}
+.techstack-list div h2{
+    font-size: 30px;
+    font-weight: 500;
+}
+.techstack-list div i{
+    font-size: 70px;
+   
+
+}
+.techstack-list div{
+    padding: 40px;
+    background-color: transparent;
+    margin: 0% 6% 0% 6%;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b87f;
+    border-right: 10px;
+    border-radius: 20px;
+}
+.services-list div button{
+   font-size: 18px;
+   padding: 8px 20px;
+   border: 1px solid #555;
+   border-radius: 10px;
+  background-color: transparent;
+  color: #0ef;
+  margin: 5px;
+}
+.services-list div button:hover{
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #0ef,
+    1px 1px 40px #0ef;
+
+}
+.services-list div img{
+    border-radius: 15px;
+}
+.services-list div h2{
+   text-decoration: underline;
+   font-weight: 600;
+   font-size: 20px;
+   color: #0ef;
+}
+.services-list div h4{
+    font-size: 15px;
+    font-weight: 300 !important;
+    margin-top: 5px;
+}
+.pjt{
+    background-color: transparent;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b87f;
+    height: 100vh;
+}
+.services-list div h3{
+    margin-top: 10px;
+    font-size: 18px;
+}
+.pjt:hover{
+   background-color: rgb(34, 0, 255);
+   transition: background 0.9s, transform 0.5s;
+    box-shadow: 1px 1px 20px #0ef,
+    1px 1px 40px #0ef;
+}
+
+
+
+
+#listofprojectsheading{
+   padding-bottom: 30px;
+}
+
+@keyframes slideRight {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0%{
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+.git-contribution{
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 0rem; 
+    padding-bottom: 40px;
+    background: #051129;
+    text-align: center;
+    padding-top: 50px;
+}
+.git-contribution-list{
+    background-color: transparent;
+    margin: 0% 6% 0% 6%;
+    text-align: center;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b87f;
+    border-right: 10px;
+    border-radius: 20px;
+    padding: 20px 0 20px 0;
+}
+/* .git-contribution-list img{
+    box-shadow: 1px 1px 20px #012290f7,
+    1px 1px 40px #0053b87f;
+} */
+.contact{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 3rem;
+    padding-left: 30px;
+    padding-top: 30px;
+    background-color: #051129;
+    padding-bottom: 30px;
+    
+}
+.content-text h2{
+    font-size: 60px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: underline;
+}
+.content-text h2 span{
+    color: #0ef;
+
+}
+.content-text h4{
+    margin: 15px 0;
+    color: rgb(228, 228, 228);
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.content-text p{
+    color: rgb(177,177,177);
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 2rem;
+
+}
+.contact-list{
+    margin-bottom: 3rem;
+    
+} 
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+.contact-list li{
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-list i{
+    display: inline-block;
+    color: #0ef;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .40s ease;
+}
+.contact-list li a:hover{
+    color: #0ef;
+    transform: scale(1.01) translateY(-5px);
+}
+.contact-icons i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+    transition: .5s ease;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.2s*var(--i));
+}
+.contact-icons i:hover{
+    background: #0ef;
+    color: #000;
+    box-shadow: 0 0 20px #0ef;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input, form textarea{
+    border: none;
+    outline: none;
+    width: 90%;
+    padding: 18px;
+    background: #555557;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+}
+.contact-form textarea{
+    resize: none;
+    height: 220px;
+}
+.contact-form form .send{
+    display: inline-block;
+    padding: 14px 60x;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 18px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef, 0 0 25px #0ef;
+
+}
+.contact-form form .send:hover{
+    box-shadow: 0 0 5px cyan,0 0 25px cyan, 0 0 50px cyan,0 0 100px cyan, 0 0 200px cyan
+
+}
+
+
+/* .last-text p{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: rgb(7,85 , 91);
+    font-weight: 300;
+    margin-top: 70px;
+  
+}
+.top{
+    position: fixed;
+    bottom: 2.1rem;
+    right: 2,1rem;
+}
+.top i{
+    color: #000;
+    background: #0ef;
+    font-size:20px ;
+    padding: 10px;
+    border-radius: 0.5rem;
+    
+} */
+/* .error-text{
+    font-size: 14.5px;
+    color: red;
+    text-align: left;
+    margin: -5px 0 10px;
+    display: none;
+} */
+
+@media screen and (min-device-width: 856px) and (max-device-width: 1024px) { 
+    .header{
+        padding: 20px 10%;
+    }
+    .logo{
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .navbar a{
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 25px;
+    }
+    .image img{
+        width: 60%;
+    }
+    .home-content h3{
+        font-size: 25px;
+        font-weight: 600; 
+    }
+    .home-content h1{
+        font-size: 40px;
+        font-weight: 700; 
+    }
+    .home-content p{
+        font-size: 14px;  
+    }
+    .about-text h2{
+        font-size: 43px;  
+    }
+    .about-text p{
+        font-size: 11px;
+    }
+    #services{
+        font-size: 15px;
+    }
+    .sub-title{ 
+        font-size: 50px;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-gap: 30px;
+    }
+    .services-list div{
+        padding: 25px;
+        font-size: 10px; 
+    }
+    .services-list div i{
+        font-size: 40px;
+    }
+    .services-list div h2{
+        font-size: 25px;
+        font-weight: 550;
+    }
+    .container {
+        padding: 80px;
+    }
+    #techstack{ 
+        font-size: 15px;
+        padding-bottom: 40px;
+    }
+    .techstack-heading{
+        font-size: 50px;
+    }
+    .techstack-list{
+        grid-gap: 0px;
+    }
+    .techstack-list div h2{
+        font-size: 25px;
+    }
+    .techstack-list div i{
+        font-size: 60px;
+    }
+    .techstack-list div{
+        padding: 30px;
+    }
+
+    .services-list div h4{
+        font-size: 12px;
+    }
+    .services-list div img{
+        width: 100%;
+        border-radius: 12px;
+    }
+    .pjt{
+        padding: 30px;
+        font-size: 10px;
+        font-weight: 13px;
+        height:500px;
+        border-radius: 215px;
+    }
+    .services-list div h3{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .services-list div button{
+        font-size: 15px;
+        padding: 6px 15px;   
+    }
+
+    .content-text h2{
+        font-size: 60px;
+    }
+    .content-text p{
+        font-size: 14px;
+    }
+
+    .contact-list i{
+        font-size: 15px;   
+    }
+    .contact-icons i{
+        font-size: 15px;
+    }
+    .contact-form textarea{
+        height: 180px;
+    }
+    .contact-form form .send{
+        padding: 10px 50px;  
+        font-size: 16px;
+    }
+    .git-contribution{
+       
+        padding-top: 40px;
+    }
+    .git-contribution-list{
+       
+        border-right: 8px;
+        border-radius: 16px;
+        padding: 15px 0 15px 0;
+    }
+    .git-contribution-list img{
+        width: 80%;
+        box-shadow: 1px 1px 20px #012290f7,
+        1px 1px 40px #0053b87f;
+    }
+}
+
+
+
+@media screen and (min-device-width: 665px) and (max-device-width: 855px) { 
+    .header{
+        padding: 20px 10%;
+    }
+    .logo{
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .navbar a{
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 25px;
+    }
+    .image img{
+        width: 70%;
+    }
+    .home-content h3{
+        font-size: 20px;
+        font-weight: 600; 
+    }
+    .home-content h1{
+        font-size: 35px;
+        font-weight: 700; 
+    }
+    .home-content p{
+        font-size: 14px;  
+    }
+    .about-text h2{
+        font-size: 38px;  
+    }
+    .about-text p{
+        font-size: 15px;
+    }
+    #services{
+        font-size: 15px;
+    }
+    .sub-title{ 
+        font-size: 45px;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(1200px,1fr));
+        grid-gap: 25px;
+    }
+
+
+    .services-list div{
+        padding: 25px;
+        font-size: 10px; 
+    }
+    .services-list div i{
+        font-size: 40px;
+    }
+    .services-list div h2{
+        font-size: 25px;
+        font-weight: 550;
+    }
+    .container {
+        padding: 80px;
+    }
+    #techstack{ 
+        font-size: 15px;
+        padding-bottom: 40px;
+    }
+    .techstack-heading{
+        font-size: 50px;
+    }
+    .techstack-list{
+        grid-gap: 0px;
+    }
+    .techstack-list div h2{
+        font-size: 25px;
+    }
+    .techstack-list div i{
+        font-size: 60px;
+    }
+    .techstack-list div{
+        padding: 30px;
+    }
+
+    .services-list div h4{
+        font-size: 12px;
+    }
+    .services-list div img{
+        width: 100%;
+        border-radius: 12px;
+    }
+    .pjt{
+        padding: 30px;
+        font-size: 10px;
+        font-weight: 13px;
+        height:500px;
+        border-radius: 215px;
+    }
+    .services-list div h3{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .services-list div button{
+        font-size: 12px;
+        padding: 4px 12px;   
+    }
+
+    .content-text h2{
+        font-size: 60px;
+    }
+    .content-text p{
+        font-size: 14px;
+    }
+
+    .contact-list i{
+        font-size: 15px;   
+    }
+    .contact-icons i{
+        font-size: 15px;
+    }
+    .contact-form textarea{
+        height: 160px;
+    }
+    .contact-form form .send{
+        padding: 10px 50px;  
+        font-size: 16px;
+    }
+    .git-contribution{
+       
+        padding-top: 35px;
+    }
+    .git-contribution-list{
+       
+        border-right: 7px;
+        border-radius: 14px;
+        padding: 12px 0 12px 0;
+    }
+    .git-contribution-list img{
+        width: 70%;
+        box-shadow: 1px 1px 20px #012290f7,
+        1px 1px 40px #0053b87f;
+    }
+}
+
+
+
+@media screen and (min-device-width: 450px) and (max-device-width: 664px) { 
+   
+    .logo{
+        font-size: 10px;
+        font-weight: 700;
+    }
+    .navbar a{
+        font-size: 9px;
+        font-weight: 400;
+        margin-left: 18px;
+    }
+    .image img{
+        width: 80%;
+    }
+    .home-content h3{
+        font-size: 16px;
+        font-weight: 600; 
+    }
+    .home-content h1{
+        font-size: 30px;
+        font-weight: 700; 
+    }
+    .home-content p{
+        font-size: 10px;  
+    }
+    .btn-box{
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+    .about-text h2{
+        font-size: 30px;  
+    }
+    .about-text h4{
+        font-size: 20px;
+    }
+    .about-text p{
+        font-size: 10px;
+    }
+    #services{
+        font-size: 9px;
+    }
+    .sub-title{ 
+        font-size: 40px;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        grid-gap: 21px;
+    }
+
+
+    .services-list div{
+        padding: 20px;
+        font-size: 8px; 
+    }
+    .services-list div i{
+        font-size: 38px;
+    }
+    .services-list div h2{
+        font-size: 22px;
+        font-weight: 550;
+    }
+    .container {
+        padding: 70px;
+    }
+    #techstack{ 
+        font-size: 12px;
+        /* padding-bottom: 40px; */
+    }
+    .techstack-heading{
+        font-size: 40px;
+    }
+    .techstack-list{
+        grid-gap: 0px;
+    }
+    .techstack-list div h2{
+        font-size: 22px;
+    }
+    .techstack-list div i{
+        font-size: 55px;
+    }
+    .techstack-list div{
+        padding: 20px;
+    }
+
+    .services-list div h4{
+        font-size: 12px;
+    }
+    .services-list div img{
+        width: 100%;
+        border-radius: 12px;
+    }
+    .pjt{
+        padding: 30px;
+        font-size: 10px;
+        font-weight: 13px;
+        height:500px;
+        border-radius: 215px;
+    }
+    .services-list div h3{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .services-list div button{
+        font-size: 12px;
+        padding: 4px 12px;   
+    }
+
+    .content-text h2{
+        font-size: 60px;
+    }
+    .content-text p{
+        font-size: 14px;
+    }
+
+    .contact-list i{
+        font-size: 15px;   
+    }
+    .contact-icons i{
+        font-size: 15px;
+    }
+    .contact-form textarea{
+        height: 160px;
+    }
+    .contact-form form .send{
+        padding: 10px 50px;  
+        font-size: 16px;
+    }
+    .contact{
+        display: block;
+    }
+    .git-contribution{
+       
+        padding-top: 30px;
+    }
+    .git-contribution-list{
+       
+        border-right: 6px;
+        border-radius: 12px;
+        padding: 10px 0 10px 0;
+    }
+    .git-contribution-list img{
+        width: 60%;
+        box-shadow: 1px 1px 20px #012290f7,
+        1px 1px 40px #0053b87f;
+    }
+}
+
+
+
+@media screen and (min-device-width: 300px) and (max-device-width: 449px) { 
+
+    .home{
+    margin-top: 30px;
+    display:inline-block;
+   }
+    .logo{
+        font-size: 10px;
+        font-weight: 700;
+        padding: 10px;
+    }
+    .navbar a{
+        font-size: 7.1px;
+        font-weight: 400;
+        margin-left: 15px;
+    }
+    .image img{
+        width: 70%;
+        margin-top: 40px;
+       
+    }
+    .home-content h3{
+        font-size: 19px;
+        font-weight: 600; 
+    }
+    .home-content h1{
+        font-size: 34px;
+        font-weight: 700; 
+    }
+    .home-content p{
+        font-size: 15px;  
+    }
+    .btn-box{
+        font-size: 14px;
+        padding: 10px 22px;
+    }
+    .about{
+        background: #051129;
+        display: block;
+        text-align: center;
+      
+    }
+    .about-image{
+        display: none;
+    }
+    .about-text h2{
+        font-size: 40px;  
+    }
+    .about-text h4{
+        font-size: 25px;
+    }
+    .about-text p{
+        font-size: 15px;
+        padding: 14px;
+    }
+    #services{
+        font-size: 12px;
+        
+    }
+    .sub-title{ 
+        font-size: 44px;
+    }
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(1000px,1fr));
+        grid-gap: 25px;
+    }
+   
+    .services-list div{
+        padding: 25px;
+        font-size: 12px; 
+    }
+    .services-list div i{
+        font-size: 35px;
+    }
+    .services-list div h2{
+        font-size: 20px;
+        font-weight: 550;
+    }
+    .container {
+        padding: 50px;
+    }
+    #techstack{ 
+ 
+        font-size: 15px;
+        padding-bottom: 30px;
+        
+    }
+    .techstack-heading{
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    .techstack-list{
+        grid-gap: 0px;
+      
+    }
+    .techstack-list div h2{
+        font-size: 22px;
+    }
+    .techstack-list div i{
+        font-size: 55px;
+    }
+    .techstack-list div{
+        padding: 20px;
+    }
+
+    .services-list div h4{
+        font-size: 12px;
+    }
+    .services-list div img{
+        width: 100%;
+        border-radius: 12px;
+    }
+    #listofprojectsheading{
+        font-size: 30px;
+    }
+    .pjt{
+        padding: 30px;
+        font-size: 10px;
+        font-weight: 13px;
+        height:475px;
+        border-radius: 215px;
+    }
+    .services-list div h3{
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .services-list div button{
+        font-size: 15px;
+        padding: 6px 15px;   
+        background-color: #081b29;
+    }
+
+    .content-text h2{
+        font-size: 40px;
+    }
+    .content-text p{
+        font-size: 12px;
+    }
+   
+    .contact-list i{
+        font-size: 11px;   
+    }
+    .contact-list li{
+        font-size: 9px;   
+    }
+    .contact-icons i{
+        font-size: 11px;
+    }
+    .contact-form textarea{
+        height: 150px;
+    }
+    .contact-form form .send{
+        padding: 10px 50px;  
+        font-size: 16px;
+    }
+    .contact{
+        display: block;
+    }
+    .contact-form form input, form textarea{ 
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    .git-contribution{
+       
+        padding-top: 30px;
+    }
+    .git-contribution-list{
+       
+        border-right: 7px;
+        border-radius: 14px;
+        padding: 12px 0 12px 0;
+    }
+    .git-contribution-list img{
+        width: 60%;
+        box-shadow: 1px 1px 20px #012290f7,
+        1px 1px 40px #0053b87f;
+    }
+
+}
+@media screen and (min-device-width: 1024px) and (max-device-width: 1036px) {
+    .services-list{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(1200px,1fr));
+        grid-gap: 25px;
+        
+    }
+
+}
